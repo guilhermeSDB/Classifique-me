@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+$Orange: hsl(25, 97%, 53%);
+$White: hsl(0, 0%, 100%);
+$LightGrey: hsl(217, 12%, 63%);
+$MediumGrey: hsl(216, 12%, 54%);
+$DarkBlue: hsl(213, 19%, 18%);
+$VeryDarkBlue: hsl(216, 12%, 8%);
+$LigthDarkBlue: hsl(213, 18%, 29%);
+$Red: rgb(219, 41, 41);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Overpass', sans-serif;
+    font-weight: 400;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    min-height: 100vh;
+    overflow: hidden;
+    background-color: $VeryDarkBlue;
+
+    main{
+        width: 100%;
+        height: 100%;
+        display: flex;
+
+        #rating,
+        #thanks{
+            width: 20rem;
+            background-color: $DarkBlue;
+            color: $White;
+            margin: auto;
+            border-radius: 16px;
+            padding: 1.5rem;
+        }
+
+        #rating{
+
+            .error{
+                transition: 0.5s;
+                color: $Red;
+                text-align: center;
+                margin-top: 10px;
+            }
+
+            .image-star{
+                width: 32px;
+                height: 32px;
+                border-radius: 200px;
+                background-color: $LigthDarkBlue;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 16px;
+            }
+
+            .card-infos{
+                width: 100%;
+                margin: 10px 0;
+
+                .title{
+                    font-size: 26px;
+                    color: $White;
+                    margin-bottom: 10px;
+                    font-weight: 700;
+                }
+                .subscription{
+                    font-size: 15px;
+                    font-weight: 400;
+                    color: $LightGrey;
+                }
+            }
+
+            .classification{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin: 15px 0;
+
+                .option{
+                    cursor: pointer;
+                    width: 2.5rem;
+                    height: 2.5rem;
+                    border-radius: 200px;
+                    background-color: $LigthDarkBlue;
+                    color: $LightGrey;
+                    font-weight: 700;
+                    font-size: 14px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    &.active{
+                        background-color: $Orange;
+                        color: $White;
+                    }
+
+                    &:hover{
+                        background-color: $LightGrey;
+                        color: $White;
+                    }
+                }
+            }
+
+            button{
+                width: 100%;
+                border: none;
+                background-color: $Orange;
+                color: $White;
+                border-radius: 50px;
+                padding: 10px 0;
+                letter-spacing: 2px;
+                font-size: 12px;
+                font-weight: 700;
+                text-transform: uppercase;
+                transition: .3s;
+                outline: none;
+                cursor: pointer;
+
+                &:hover{
+                    background-color: $White;
+                    color: $Orange;
+                }
+            }
+        }
+
+        #thanks{
+            display: none;
+            text-align: center;
+
+            .ilustration{
+                display: flex;
+                justify-content: center;
+                margin: 0 auto;
+            }
+
+            .classification-result{
+                width: 80%;
+                font-size: 14px;
+                font-weight: 400;
+                color: $Orange;
+                border-radius: 200px;
+                background-color: $LigthDarkBlue;
+                padding: 6px 0;
+                margin: 26px auto;
+            }
+
+            h1{
+                font-size: 26px;
+                color: $White;
+                margin-bottom: 10px;
+                font-weight: 700;
+            }
+
+            p{
+                font-size: 15px;
+                font-weight: 400;
+                color: $LightGrey;
+            }
+        }
+    }
+}

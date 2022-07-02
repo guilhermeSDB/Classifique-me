@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: "Overpass", sans-serif;
+  font-weight: 400;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  min-height: 100vh;
+  overflow: hidden;
+  background-color: hsl(216deg, 12%, 8%);
+}
+body main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+body main #rating,
+body main #thanks {
+  width: 20rem;
+  background-color: hsl(213deg, 19%, 18%);
+  color: hsl(0deg, 0%, 100%);
+  margin: auto;
+  border-radius: 16px;
+  padding: 1.5rem;
+}
+body main #rating .error {
+  transition: 0.5s;
+  color: rgb(219, 41, 41);
+  text-align: center;
+  margin-top: 10px;
+}
+body main #rating .image-star {
+  width: 32px;
+  height: 32px;
+  border-radius: 200px;
+  background-color: hsl(213deg, 18%, 29%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 16px;
+}
+body main #rating .card-infos {
+  width: 100%;
+  margin: 10px 0;
+}
+body main #rating .card-infos .title {
+  font-size: 26px;
+  color: hsl(0deg, 0%, 100%);
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+body main #rating .card-infos .subscription {
+  font-size: 15px;
+  font-weight: 400;
+  color: hsl(217deg, 12%, 63%);
+}
+body main #rating .classification {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 15px 0;
+}
+body main #rating .classification .option {
+  cursor: pointer;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 200px;
+  background-color: hsl(213deg, 18%, 29%);
+  color: hsl(217deg, 12%, 63%);
+  font-weight: 700;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body main #rating .classification .option.active {
+  background-color: hsl(25deg, 97%, 53%);
+  color: hsl(0deg, 0%, 100%);
+}
+body main #rating .classification .option:hover {
+  background-color: hsl(217deg, 12%, 63%);
+  color: hsl(0deg, 0%, 100%);
+}
+body main #rating button {
+  width: 100%;
+  border: none;
+  background-color: hsl(25deg, 97%, 53%);
+  color: hsl(0deg, 0%, 100%);
+  border-radius: 50px;
+  padding: 10px 0;
+  letter-spacing: 2px;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: 0.3s;
+  outline: none;
+  cursor: pointer;
+}
+body main #rating button:hover {
+  background-color: hsl(0deg, 0%, 100%);
+  color: hsl(25deg, 97%, 53%);
+}
+body main #thanks {
+  display: none;
+  text-align: center;
+}
+body main #thanks .ilustration {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+body main #thanks .classification-result {
+  width: 80%;
+  font-size: 14px;
+  font-weight: 400;
+  color: hsl(25deg, 97%, 53%);
+  border-radius: 200px;
+  background-color: hsl(213deg, 18%, 29%);
+  padding: 6px 0;
+  margin: 26px auto;
+}
+body main #thanks h1 {
+  font-size: 26px;
+  color: hsl(0deg, 0%, 100%);
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+body main #thanks p {
+  font-size: 15px;
+  font-weight: 400;
+  color: hsl(217deg, 12%, 63%);
+}
