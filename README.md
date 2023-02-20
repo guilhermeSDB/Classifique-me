@@ -6,9 +6,9 @@ Classifique-me é um componente de classificação.
   <img style="border-radius:10%" width="100%" height="100%" src="images/capa.png" alt="exemplo imagem">
 </p>
 
-> Desafio Frontendmentor Fylo Landing Page - Landing Page Fylo.
+> Desafio Frontendmentor Interactive Rating Componente - Componente de classificação interativa.
 
-### [Ver Preview](https://blocada.netlify.app/)
+### [Ver Preview](https://guilhermesdb.github.io/Classifique-me/)
 
 ## 👨🏻‍💻 Techs 
 
